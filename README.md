@@ -4,7 +4,7 @@ Home-screen quick actions for DartNative on iOS 15+ and Android API 26+.
 Version **0.1.0**. See [VALIDATION.md](VALIDATION.md) for tested environments
 and remaining qualification limits.
 
-[Source repository](https://github.com/ManmohanTalwar/quick_actions_kit) · [Report an issue](https://github.com/ManmohanTalwar/quick_actions_kit/issues)
+[DartNative catalogue](https://dartpub.dev/plugins/quick_actions_kit) · [Source repository](https://github.com/ManmohanTalwar/quick_actions_kit) · [Report an issue](https://github.com/ManmohanTalwar/quick_actions_kit/issues)
 
 ## Demo
 

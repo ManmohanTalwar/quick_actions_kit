@@ -140,4 +140,3 @@ registry resolution; the verification started without locks or overrides.
 Website registration reserves the plugin; `dn plugin publish` uploads a version.
 Use `dn plugin sync` for later README/example-only changes without republishing
 0.1.0. A subsequent binary/API change requires a new version.
-
