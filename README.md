@@ -33,7 +33,15 @@ await actions.clearShortcutItems();
 await actions.dispose(); // Stops delivery, does not clear shortcuts.
 ```
 
-Install from the DartNative registry with `quick_actions_kit: ^0.1.0`.
+Install from the DartNative registry (the explicit host is required on DN 1.4.0):
+
+```yaml
+dependencies:
+  quick_actions_kit:
+    hosted: https://dartpub.dev
+    version: ^0.1.0
+```
+
 For local development, see [the example instructions](example/README.md).
 Each host owns its navigation and user policy. No Orb routes, accounts, credentials or private dependencies are included.
 

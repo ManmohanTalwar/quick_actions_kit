@@ -1,7 +1,8 @@
 # Quick actions example
 
 An independent DartNative app with three synthetic shortcuts: compose, search and
-Unicode. It uses no Orb services or account data.
+Unicode. It uses no Orb services or account data. The committed dependency uses
+`https://dartpub.dev` explicitly; ordinary Pub dependencies keep their default host.
 
 For local source development, create an ignored `pubspec_overrides.yaml` in
 this example directory:
