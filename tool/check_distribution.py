@@ -16,6 +16,7 @@ for filename in sys.argv[1:]:
         for member in members:
             path = Path(member.name)
             assert not path.is_absolute() and ".." not in path.parts, member.name
+            assert path.name != ".DS_Store" and not path.name.startswith("._"), member.name
             assert not any(x in path.parts for x in (".dart_tool", ".dnkeys", "local.properties", "Pods")), member.name
         readmes = [m for m in members if Path(m.name).name == "README.md"]
         assert len(readmes) == 1, filename

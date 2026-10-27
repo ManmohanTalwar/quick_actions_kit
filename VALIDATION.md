@@ -1,8 +1,10 @@
 # quick_actions_kit validation
 
-Date: 2026-10-27. Version: **0.1.0-dev.1**. Original implementation complete for
-the bounded first package. **Development qualification, not a published release
-or Orb application migration.** Stop here; decide remaining plugin order with the user.
+Date: 2026-10-27. Release candidate: **0.1.0**. This record separates the original
+0.1.0-dev.1 implementation checks from the 0.1.0 distribution checks below.
+Website registration and publisher authentication are complete; the CLI upload
+and fresh registry-consumer check are pending. No Orb application migration is
+claimed. Finish this package before deciding the remaining plugin order.
 
 ## Scope and provenance
 
@@ -19,7 +21,7 @@ SDK: DartNative 1.4.0, Dart 3.12.0-192.0.dev; framework 75bc07e9b49, engine
 ed0d71411e76bf9558f1c4dc8078f3222e364497. Public guide pin:
 1be7f977753bf7976c0861b64756cc34aa1b489f. Native floors: iOS 15, Android API 26.
 
-## Completed checks
+## Original implementation qualification (0.1.0-dev.1)
 
 | Evidence | Result | Boundary |
 |---|---|---|
@@ -65,7 +67,7 @@ dn run -d <simulator-or-emulator-id>
 `local_validation` is a local build label, not an assigned publisher. See the
 example README for the runtime steps. The binaries built here are not published.
 
-## Remaining release gates
+## Qualification limits
 
 - Physical iOS/Android devices, minimum supported OS versions, Android launcher
   variants, release/AOT and Android shrinking, icon resource fallback and rate
@@ -75,28 +77,44 @@ example README for the runtime steps. The binaries built here are not published.
   require an explicit app-owned migration policy. No upgrade continuity is claimed.
 - Stress events during teardown/restart, long background suspension, system kill
   and launcher task-stack restoration beyond the bounded smoke sequences.
-- Before a catalogue release, confirm publisher/copyright holder, final version,
-  name reservation and licence review, then clean installation from the registry.
-- The official builder's native and Dart-binding archives omit extra docs/notices.
-  README includes synchronized notices; full native source/tests/evidence must
-  accompany the public repository. Do not call the Dart-only source tarball a
-  complete native source distribution.
+- The official builder's Dart-binding archive is not a complete native source
+  distribution. Full native source, tests, GIFs and evidence are in the public
+  repository. Both archives carry LICENSE and collector-readable NOTICES; README
+  also reproduces the synchronized notices.
 
-## Source repository
+## Version 0.1.0 release checks
 
-Public source: [https://github.com/ManmohanTalwar/quick_actions_kit](https://github.com/ManmohanTalwar/quick_actions_kit). The initial GitHub upload is
-separate from catalogue registration and release; `publish_to: none` remains set.
+- Public repository: [ManmohanTalwar/quick_actions_kit](https://github.com/ManmohanTalwar/quick_actions_kit).
+  Package version is `0.1.0`, consumer constraint is `^0.1.0`, and both publishing
+  metadata and the example point explicitly to `https://dartpub.dev`.
+- SDK-specific analysis of lib/test/example passed. All 11 behavior tests passed
+  using the cached test runner with the existing DN resolution. The ordinary Dart
+  test launcher tried resolving dartnative from pub.dev; it is not evidence of a
+  successful fresh resolution. Use `dn pub get` with the installed DN SDK.
+- Android debug example rebuilt with the final Quick Actions Kit display name.
+- Both README GIFs show actual launcher menus and a single compose callback.
+  The iOS 26.5 simulator and Android 14/API 34 emulator were newly created for
+  recording; Quick Actions Kit was the only non-system app installed. No Orb
+  apps or account data appear. Static waiting time was trimmed; action order and
+  native UI were preserved. iOS used RocketSim; Android used emulator recording.
+  Marionette's Flutter binding cannot drive DN or the OS launcher directly.
+- The iOS recording used the previously qualified example binary with unchanged
+  runtime source; the Android recording used the newly built debug APK. These
+  demos do not establish physical-device, AOT, minimum-OS or upgrade support.
+- Official 0.1.0 standalone build passed: iOS arm64 device + arm64/x86_64 simulator
+  XCFramework and Android arm64-v8a/x86_64 AAR. Plugin ELF LOAD alignment is 0x4000
+  for both Android ABIs. This is not a whole-app 16-KB device qualification.
+- Both archives passed the distribution notice check. Textual payloads contain
+  no local home paths or source-development overrides. Native artifacts include
+  public bindings and wrappers; GitHub remains the complete source distribution.
 
-The source and artifact hashes in validation/ record the original local native
-qualification. Repository metadata was subsequently added to pubspec.yaml and
-the podspec homepage; runtime source is unchanged. The native binaries were not
-rebuilt for this metadata-only update. The example Podfile.lock likewise records
-the earlier native build and will be refreshed by the next native dependency
-resolution.
+The original `validation/source-sha256.json` and `artifact-sha256.json` are
+historical snapshots for 0.1.0-dev.1. Final 0.1.0 archive checksums are recorded
+separately. Example lockfiles may describe the earlier source qualification;
+registry-consumer validation uses a fresh directory without locks or overrides.
 
-For the initial source upload, analysis of lib/test/example passed, all 11
-existing tests passed via the cached test runner with the existing DN package
-resolution, and distribution notices plus podspec syntax checks passed. The
-ordinary Dart test launcher attempted to resolve dartnative from pub.dev after
-the metadata edit; it was not used as a successful fresh dependency-resolution
-check. No new native build, device run or clean-clone qualification is claimed.
+## Publication verification
+
+Pending: push the final candidate, upload via `dn plugin publish`, then resolve
+and build a fresh consumer from the registry without local source overrides.
+Website registration alone does not upload a version or its native binaries.

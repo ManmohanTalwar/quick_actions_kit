@@ -8,9 +8,10 @@ and remaining qualification limits.
 
 ## Demo
 
-Install shortcuts, open the launcher menu, choose **New post**, and observe
+Open the launcher menu, choose **New post**, and observe
 `Last action: compose` with one activation. Recorded using the actual home-screen
-menus on dedicated clean devices. Only static waiting time is trimmed.
+menus on dedicated clean devices. Android starts with the shortcuts installed.
+Only static waiting time is trimmed.
 
 | iOS 26.5 simulator | Android 14 emulator |
 |---|---|
