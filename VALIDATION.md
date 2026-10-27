@@ -79,8 +79,8 @@ example README for the runtime steps. The binaries built here are not published.
   and launcher task-stack restoration beyond the bounded smoke sequences.
 - The official builder's Dart-binding archive is not a complete native source
   distribution. Full native source, tests, GIFs and evidence are in the public
-  repository. Both archives carry LICENSE and collector-readable NOTICES; README
-  also reproduces the synchronized notices.
+  repository. Both archives carry LICENSE and collector-readable NOTICES. The
+  current README links to the separate notice files; their attribution is retained.
 
 ## Version 0.1.0 release checks
 
