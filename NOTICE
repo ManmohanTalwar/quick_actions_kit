@@ -1,0 +1,5 @@
+quick_actions_kit
+Copyright 2026 the quick_actions_kit contributors.
+Original implementation is licensed under Apache-2.0.
+Flutter API/behaviour references and their BSD-3-Clause licence are recorded in THIRD_PARTY_NOTICES.md.
+DartNative and vendor SDKs retain their own licences and are not relicensed or redistributed as source here.

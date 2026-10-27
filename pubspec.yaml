@@ -1,0 +1,32 @@
+name: quick_actions_kit
+description: Native home-screen quick actions for DartNative on iOS and Android, with cold and warm launch delivery.
+version: 0.1.0-dev.1
+homepage: https://github.com/ManmohanTalwar/quick_actions_kit
+repository: https://github.com/ManmohanTalwar/quick_actions_kit
+issue_tracker: https://github.com/ManmohanTalwar/quick_actions_kit/issues
+publish_to: none
+
+environment:
+  sdk: ^3.12.0-192.0.dev
+
+dependencies:
+  dartnative: ^1.0.0
+  ffi: ^2.1.4
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.0
+
+dartnative:
+  plugin:
+    platforms:
+      ios:
+        ffiPlugin: true
+      android:
+        package: dev.dnplugins.quick_actions_kit
+        pluginClass: QuickActionsKitPlugin
+  registrant:
+    imports:
+      - package:quick_actions_kit/quick_actions_kit.dart
+    calls:
+      - QuickActionsKitBindings.loadSymbols();

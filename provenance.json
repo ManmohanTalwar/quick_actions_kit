@@ -1,0 +1,60 @@
+{
+  "created": "2026-10-27",
+  "source": "original adapter generated from official DN plugin scaffold",
+  "original_license": "Apache-2.0",
+  "flutter_app_commit": "61449f0e76c22b7f7fa96afc6f7a5fbff78a9c6f",
+  "dartnative_docs_commit": "1be7f977753bf7976c0861b64756cc34aa1b489f",
+  "references": [
+    {
+      "package": "quick_actions-1.1.0",
+      "path": "lib/quick_actions.dart",
+      "sha256": "1edb4b27f1942b4831c6d0f53c3a5e96a21eb99035d9ab045733699241509eee",
+      "license": "BSD-3-Clause",
+      "disposition": "API/behaviour reference; no source file copied"
+    },
+    {
+      "package": "quick_actions-1.1.0",
+      "path": "LICENSE",
+      "sha256": "89519eca6f7b9529b35bdddd623a58c3af06a88c458dbd6531ddb4675acf75a9",
+      "license": "BSD-3-Clause",
+      "disposition": "API/behaviour reference; no source file copied"
+    },
+    {
+      "package": "quick_actions_android-1.0.18",
+      "path": "android/src/main/java/io/flutter/plugins/quickactions/QuickActions.java",
+      "sha256": "368fcadb961fed409672665a34330283d007fbbbec11dd4615c8a0173209f899",
+      "license": "BSD-3-Clause",
+      "disposition": "API/behaviour reference; no source file copied"
+    },
+    {
+      "package": "quick_actions_android-1.0.18",
+      "path": "android/src/main/java/io/flutter/plugins/quickactions/QuickActionsPlugin.java",
+      "sha256": "8f0546dc3fbf60a9bd7969764199513db1d3f6bbaba2dd51c70d2b6639ade692",
+      "license": "BSD-3-Clause",
+      "disposition": "API/behaviour reference; no source file copied"
+    },
+    {
+      "package": "quick_actions_android-1.0.18",
+      "path": "LICENSE",
+      "sha256": "89519eca6f7b9529b35bdddd623a58c3af06a88c458dbd6531ddb4675acf75a9",
+      "license": "BSD-3-Clause",
+      "disposition": "API/behaviour reference; no source file copied"
+    },
+    {
+      "package": "quick_actions_ios-1.2.5",
+      "path": "ios/quick_actions_ios/Sources/quick_actions_ios/QuickActionsPlugin.swift",
+      "sha256": "24d48e404def891ba67c571138beefcbd7be9ac1196dd0b1b47b61d4ba8d720b",
+      "license": "BSD-3-Clause",
+      "disposition": "API/behaviour reference; no source file copied"
+    },
+    {
+      "package": "quick_actions_ios-1.2.5",
+      "path": "LICENSE",
+      "sha256": "420f7739f169097f0aad1242045169cd643c8f1d94e62866fad265ae4c369b7d",
+      "license": "BSD-3-Clause",
+      "disposition": "API/behaviour reference; no source file copied"
+    }
+  ],
+  "framework_source_copied": false,
+  "runtime_evidence": "VALIDATION.md"
+}

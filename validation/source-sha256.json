@@ -1,0 +1,21 @@
+{
+  "android/CMakeLists.txt": "59c41d9a0a3b86ecb5b583939b05c8fba1aff43411933aac34b05b45cbfbea31",
+  "android/build.gradle": "b7bed14a5dbcaa42a18a8f12b10f4ffacfa85e6682e3f54e4e2c21dd4548bc6e",
+  "android/consumer-rules.pro": "90b1d495088954d4c91d482072093ac1183bdb56ae8b8905e2cb11cf511f1596",
+  "android/src/main/AndroidManifest.xml": "43ccf3348cfad45f7720290cfee3717eb362fedd45b67f9023ec717f5282d300",
+  "android/src/main/cpp/dn_quick_actions_kit_bridge.cpp": "dca3a22f550439b05e977dc64e774f3b826d9d938b897fa07feeb1fe0238c2fe",
+  "android/src/main/kotlin/dev/dnplugins/quick_actions_kit/DNQuickActionsKitBridge.kt": "61ced76af32492139bf4ea9e4a736b12383408922a1144cb9932ed815f7baa20",
+  "android/src/main/kotlin/dev/dnplugins/quick_actions_kit/QuickActionReceiverActivity.kt": "a84bec8eba3204575b026d78e766701f43851229abe514725bbe2d88b0e623ee",
+  "android/src/main/kotlin/dev/dnplugins/quick_actions_kit/QuickActionsKitPlugin.kt": "4e23e44b513ba6ba2411af9c8dd15ecb9fcde782ed406048767026d0929627a3",
+  "example/lib/main.dart": "f52b3777e9a48d7bc09db8bc50a0306f7db2d12beb228c72e8bbb77f375d7c07",
+  "ios/Classes/DNQuickActionsKitBridge.swift": "5164236dd6cdbad9b66a28d26c5d99a84ab42f79eb2833858b3c83c73f8b2442",
+  "ios/quick_actions_kit.podspec": "f563049a66332bb0be978f49ed4a0036a53fee04e94618821e0645461cf979f1",
+  "lib/quick_actions_kit.dart": "b700f2e87ea356975a2fea0454cfe54baa061f5f983bd69a3cc5a6a6f4df9822",
+  "lib/src/lifecycle_native.dart": "1828e1997b59d6897455e61b9896f44d23ed0817ab0c880540c8ea7525227242",
+  "lib/src/lifecycle_stub.dart": "ecf0744ed588e7ec9886aa0167738c645d92ce8c053b9b99060195304b05eca4",
+  "lib/src/platform.dart": "24131052350bf9cbe0ef9bdfbcd000426abc1f2661dcc8dd8a3bf90b3eb52eb7",
+  "lib/src/quick_actions_kit.dart": "c2745659ade4831c27d8d64f35688fc09cf872175bbb5e678940a97953932230",
+  "lib/src/quick_actions_kit_bindings.dart": "3a6a7d234613317571f134628c4695cf61b1d16ff6face6ebdcfc30b9b65896d",
+  "pubspec.yaml": "111da00d547fc22cea3385a11d0ce4e1bbc5e9eca36fa86f48b40cf91a517b3e",
+  "test/quick_actions_kit_test.dart": "9717d7069b56901de8548ea0993fa85d43f9aa94697abe7850557f75d4d0ea85"
+}

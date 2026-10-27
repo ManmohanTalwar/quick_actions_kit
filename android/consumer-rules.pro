@@ -1,0 +1,3 @@
+-keep class dev.dnplugins.quick_actions_kit.DNQuickActionsKitBridge { *; }
+-keep class dev.dnplugins.quick_actions_kit.QuickActionsKitPlugin { *; }
+-keep class dev.dnplugins.quick_actions_kit.QuickActionReceiverActivity { *; }
