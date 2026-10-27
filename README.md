@@ -9,10 +9,12 @@ and remaining qualification limits.
 ## Demo
 
 Install shortcuts, open the launcher menu, choose **New post**, and observe
-`Last action: compose` with one activation. Recorded on a clean iOS 26.5 simulator
-using the actual home-screen menu.
+`Last action: compose` with one activation. Recorded using the actual home-screen
+menus on dedicated clean devices. Only static waiting time is trimmed.
 
-![iOS quick-actions launcher demo](docs/media/ios-quick-actions.gif)
+| iOS 26.5 simulator | Android 14 emulator |
+|---|---|
+| ![iOS quick-actions launcher demo](docs/media/ios-quick-actions.gif) | ![Android quick-actions launcher demo](docs/media/android-quick-actions.gif) |
 
 ## API
 
