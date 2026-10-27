@@ -93,10 +93,10 @@ No DartNative framework sources or vendor binaries are redistributed in source.
 
 ## Distribution notices
 
-The official archive builder currently carries README and LICENSE, but omits
-standalone NOTICE/THIRD_PARTY_NOTICES files. The following synchronized copy keeps
-these notices in both generated archives. Run `python3 tool/check_distribution.py`
-when changing them. The complete native source, tests and validation record belong
+The official archive builder copies the synchronized extensionless
+THIRD_PARTY_NOTICES bundle to NOTICES in both generated archives for licence
+collectors. The notices are also reproduced below. Run
+`python3 tool/check_distribution.py` when changing them. The complete native source, tests and validation record belong
 to the public source repository; the builder's “source” archive contains Dart
 bindings only.
 

@@ -9,6 +9,7 @@ notice = (root / "NOTICE").read_text() + "\n" + (root / "THIRD_PARTY_NOTICES.md"
 readme = (root / "README.md").read_text()
 assert "<!-- BEGIN DISTRIBUTION NOTICES -->\n" + notice + "<!-- END DISTRIBUTION NOTICES -->" in readme, "README notices are out of sync"
 assert "Apache License" in (root / "LICENSE").read_text()
+assert (root / "THIRD_PARTY_NOTICES").read_text() == notice, "Collector notices are out of sync"
 for filename in sys.argv[1:]:
     with tarfile.open(filename) as archive:
         members = archive.getmembers()
@@ -20,4 +21,7 @@ for filename in sys.argv[1:]:
         assert len(readmes) == 1, filename
         assert notice in archive.extractfile(readmes[0]).read().decode(), "Archive lost notices"
         assert any(Path(m.name).name == "LICENSE" for m in members), filename
+        notices = [m for m in members if Path(m.name).name == "NOTICES"]
+        assert len(notices) == 1, "Archive needs one collector-readable NOTICES file"
+        assert archive.extractfile(notices[0]).read().decode() == notice, "Archive notices differ"
 print("Distribution notices and supplied archives passed.")
