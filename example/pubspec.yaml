@@ -12,9 +12,8 @@ dependencies:
   dartnative: ^1.0.0
   dartnative_ios: ^1.0.0
   dartnative_android: ^1.0.0
-  # The plugin this app demonstrates, from the directory above.
-  quick_actions_kit:
-    path: ../
+  # Registry dependency; use an ignored override for local source development.
+  quick_actions_kit: ^0.1.0
   # Skia GPU canvas: SkSL runtime shaders and rich shaped text. Adds about
   # 9 MB to an iPhone app; on Android the library is already in the platform
   # binding. For shapes, paths and charts use CustomPaint, which is native

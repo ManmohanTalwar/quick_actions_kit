@@ -1,10 +1,10 @@
 name: quick_actions_kit
 description: Native home-screen quick actions for DartNative on iOS and Android, with cold and warm launch delivery.
-version: 0.1.0-dev.1
+version: 0.1.0
 homepage: https://github.com/ManmohanTalwar/quick_actions_kit
 repository: https://github.com/ManmohanTalwar/quick_actions_kit
 issue_tracker: https://github.com/ManmohanTalwar/quick_actions_kit/issues
-publish_to: none
+publish_to: https://dartpub.dev
 
 environment:
   sdk: ^3.12.0-192.0.dev

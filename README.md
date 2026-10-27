@@ -1,8 +1,8 @@
 # quick_actions_kit
 
 Home-screen quick actions for DartNative on iOS 15+ and Android API 26+.
-**Development version — not published to the DartNative catalogue.** See
-[VALIDATION.md](VALIDATION.md) for exact checks and remaining release gates.
+Version **0.1.0**. See [VALIDATION.md](VALIDATION.md) for tested environments
+and remaining qualification limits.
 
 [Source repository](https://github.com/ManmohanTalwar/quick_actions_kit) · [Report an issue](https://github.com/ManmohanTalwar/quick_actions_kit/issues)
 
@@ -23,8 +23,9 @@ await actions.clearShortcutItems();
 await actions.dispose(); // Stops delivery, does not clear shortcuts.
 ```
 
-Use a path dependency while developing. Each host owns its navigation and user
-policy. No Orb routes, accounts, credentials or private dependencies are included.
+Install from the DartNative registry with `quick_actions_kit: ^0.1.0`.
+For local development, see [the example instructions](example/README.md).
+Each host owns its navigation and user policy. No Orb routes, accounts, credentials or private dependencies are included.
 
 ## Behaviour
 

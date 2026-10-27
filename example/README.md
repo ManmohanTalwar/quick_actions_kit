@@ -3,6 +3,22 @@
 An independent DartNative app with three synthetic shortcuts: compose, search and
 Unicode. It uses no Orb services or account data.
 
+For local source development, create an ignored `pubspec_overrides.yaml` in
+this example directory:
+
+```yaml
+dependency_overrides:
+  quick_actions_kit:
+    path: ../
+  dartnative:
+    path: <DARTNATIVE_SDK>/bin/cache/pkg/dartnative
+```
+
+Replace `<DARTNATIVE_SDK>` with your installed SDK directory. DN 1.4.0 injects
+its framework override into pubspec.yaml; Pub gives this overrides file priority,
+so local development must also retain the framework path here. Keep the file
+untracked, and omit it when testing the published registry version.
+
 ```sh
 dn pub get
 dn run -d <device-id>
