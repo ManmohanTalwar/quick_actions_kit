@@ -6,6 +6,14 @@ and remaining qualification limits.
 
 [Source repository](https://github.com/ManmohanTalwar/quick_actions_kit) · [Report an issue](https://github.com/ManmohanTalwar/quick_actions_kit/issues)
 
+## Demo
+
+Install shortcuts, open the launcher menu, choose **New post**, and observe
+`Last action: compose` with one activation. Recorded on a clean iOS 26.5 simulator
+using the actual home-screen menu.
+
+![iOS quick-actions launcher demo](docs/media/ios-quick-actions.gif)
+
 ## API
 
 ```dart
