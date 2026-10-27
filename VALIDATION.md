@@ -1,10 +1,10 @@
 # quick_actions_kit validation
 
-Date: 2026-10-27. Release candidate: **0.1.0**. This record separates the original
+Date: 2026-10-27. Published version: **0.1.0**. This record separates the original
 0.1.0-dev.1 implementation checks from the 0.1.0 distribution checks below.
-Website registration and publisher authentication are complete; the CLI upload
-and fresh registry-consumer check are pending. No Orb application migration is
-claimed. Finish this package before deciding the remaining plugin order.
+CLI publication, fresh registry resolution, both debug consumer builds and actual
+launcher activation checks passed. No Orb application migration is claimed.
+The next package has not started; agree its order with the user.
 
 ## Scope and provenance
 
@@ -110,11 +110,34 @@ example README for the runtime steps. The binaries built here are not published.
 
 The original `validation/source-sha256.json` and `artifact-sha256.json` are
 historical snapshots for 0.1.0-dev.1. Final 0.1.0 archive checksums are recorded
-separately. Example lockfiles may describe the earlier source qualification;
-registry-consumer validation uses a fresh directory without locks or overrides.
+in `validation/release-0.1.0.json`. Example lockfiles now record the successful
+registry resolution; the verification started without locks or overrides.
 
 ## Publication verification
 
-Pending: push the final candidate, upload via `dn plugin publish`, then resolve
-and build a fresh consumer from the registry without local source overrides.
-Website registration alone does not upload a version or its native binaries.
+- [Catalogue listing](https://dartpub.dev/plugins/quick_actions_kit): published,
+  Apache-2.0, version 0.1.0, not yanked. The official CLI uploaded the native and
+  Dart-binding archives and reported “Plugin is live.” The complete source at
+  publication was Git commit `0517b1f2db55ea35f5133a13ce395517e035c907` on main.
+- Independent public checks confirmed version metadata, archive checksum, README,
+  example and changelog. Both rendered README GIF URLs return image/gif, HTTP 200.
+  The catalogue description was updated from its earlier development wording.
+- Exported the tracked example into a fresh temporary directory, excluding
+  lockfiles and overrides. `dn pub get` resolved `quick_actions_kit 0.1.0` from
+  hosted dartpub.dev, then installed its iOS and Android native artifacts. The
+  downloaded Android AAR hash matches the upload exactly.
+- `dn build ios --simulator --debug --no-pub` and
+  `dn build apk --debug --no-pub` passed from that registry consumer. Both apps
+  were installed on the dedicated recording devices. In each real launcher menu,
+  choosing New post produced **Activations: 1 / Last action: compose**.
+  Witnesses: `validation/registry-ios-0.1.0.png` and
+  `validation/registry-android-0.1.0.png`. This repeats warm delivery against the
+  distributed binaries; the broader lifecycle checks above remain historical.
+- The registry API's generic runtime_min value currently says DartNative ≥3.0;
+  it is not exposed in the listing editor and is not a verified compatibility
+  claim. The tested SDK is explicitly recorded here and in the listing as 1.4.0.
+
+Website registration reserves the plugin; `dn plugin publish` uploads a version.
+Use `dn plugin sync` for later README/example-only changes without republishing
+0.1.0. A subsequent binary/API change requires a new version.
+
