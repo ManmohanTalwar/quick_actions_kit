@@ -1,0 +1,4 @@
+{
+  // Let dn pub get resolve SDK-provided DartNative dependencies.
+  "dart.runPubGetOnPubspecChanges": "never"
+}
