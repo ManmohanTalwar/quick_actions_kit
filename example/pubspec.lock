@@ -105,13 +105,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.7"
-  dartnative:
-    dependency: "direct overridden"
-    description:
-      path: ".dart_tool/dartnative_sdk/dartnative"
-      relative: true
-    source: path
-    version: "1.0.0"
   ffi:
     dependency: "direct main"
     description:
@@ -275,10 +268,11 @@ packages:
   quick_actions_kit:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.1.0-dev.1"
+      name: quick_actions_kit
+      sha256: "5e4a78144866c6557479c528fd5fef5264a4f53bcbe5a4fe4bcf6c263ffc7dbe"
+      url: "https://dartpub.dev"
+    source: hosted
+    version: "0.1.0"
   shelf:
     dependency: transitive
     description:

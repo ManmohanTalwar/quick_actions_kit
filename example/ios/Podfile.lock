@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   dartnative_ios: c5e063a6bc126b1f88144c1c16ff9c200caf1e9e
   DartNativeCore: 225e49d9e35e234bcadc6b81586fc4275a1006ee
   FlexLayout: ea94491c923485f7f28891cb5b10245d22df380b
-  quick_actions_kit: aca3475c12a441eb2e859f2e9ffe42b4d1d039b5
+  quick_actions_kit: e0729cbb15bfcb9bd526df3fba05d5efd3c9c622
 
 PODFILE CHECKSUM: 0eb83f38c0038ca753c95effc43e8a0e67ec8c2c
 
